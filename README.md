@@ -34,7 +34,7 @@ Error rate :
 
 4, train_MixMatchAttack.py is to train on CIFAR-10 or SVHN dataset with MixMatchAttack method, an extension of MixMatch "https://arxiv.org/abs/1905.02249". We developpe the attack version from an implemention of MixMatch in Pytorch, written by Yui : "https://github.com/YU1ut/MixMatch-pytorch". An exemple of uisng this script :
 
-python train_MixMatchAttack.py --data='cifar10' --n-labeled=250 --manualSeed=0 --out='/home/kt254686/Second_paper/MixMatchAttack/result/MixMatchAttack_7_cifar10/gpu_0' --gpu='0' --xi=0.1 --xi_end=0.01 --n_iters=1
+python train_MixMatchAttack.py --data='cifar10' --n-labeled=250 --manualSeed=0 --out='/home/result' --gpu='0' --xi=0.1 --xi_end=0.01 --n_iters=1
 
 
 Error rate in case of using 250 labelled samples :
