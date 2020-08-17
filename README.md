@@ -7,7 +7,7 @@ Require : pytorch
 
 1, projections.py contains the projection for sum and positive constraint.
 
-2, train_ImageNet.py is to train ImageNet dataset with 4 methods ERM, MixUp, CutMix and MixUpAttack. User need to fill paths for train and valid data folder. We use implementation of MixUp by "https://github.com/facebookresearch/mixup-cifar10" and CutMix by https://github.com/clovaai/CutMix-PyTorch. An exemple of uisng this script : 
+2, train_ImageNet.py is to train ImageNet dataset with 4 methods ERM, MixUp, CutMix and MixUpAttack. User need to fill paths for train and valid data folder. We use implementation of MixUp by Zhang "https://github.com/hongyi-zhang/mixup" and CutMix by Yun "https://github.com/clovaai/CutMix-PyTorch". An exemple of uisng this script : 
 
 python train_ImageNet.py --method='MixUpAttack' --epochs=300 --out='/home/result' --manualSeed=0 --gpu_device 0 1 2 3 --batch-size=200 --beta=0.2 -j 16 --n_iters=1 --xi=0.01 --xi-end=0.01 --lock=False
 
@@ -18,6 +18,8 @@ Error rate :
 |MixUp| 32.13 | 11.35 |
 |MixUpAttack|  |  |
 |CutMix| 30.94 | 10.41 |
+
+P/s : To download ImageNet dataset, we use the downloader written by Martins Frolovs "https://github.com/mf1024/ImageNet-Datasets-Downloader"
 
 3, FGSM_ImageNet.py is to evaluate trained model by adversarial examples. User need to fill paths for trained models ERM, MixUp, CutMix and MixUpAttack
 
