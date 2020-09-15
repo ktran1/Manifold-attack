@@ -1,5 +1,5 @@
 # Manifold-attack
-This is an implementation of manifold attack.
+This is an implementation of manifold attack : https://arxiv.org/abs/2009.05965
 Khanh-Hung TRAN, Fred-Maurice NGOLE MBOULA, Jean-Luc STARCK
 
 Require : pytorch
