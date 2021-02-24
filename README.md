@@ -16,7 +16,7 @@ Error rate :
 | ------------- | ------------- | -------------|
 |ERM| 33.84 | 12.46 |
 |MixUp| 32.13 | 11.35 |
-|MixUpAttack| 31.35 | 10.81 |
+|MixUpAttack| 31.82 | 11.15 |
 |CutMix| 30.94 | 10.41 |
 
 P/s : To download ImageNet dataset, we use the downloader written by Martins Frolovs "https://github.com/mf1024/ImageNet-Datasets-Downloader"
@@ -30,8 +30,9 @@ python FGSM_ImageNet.py
 Error rate :
 | Method \ Data |   Top-1    |     Top-5   |
 | ------------- | ------------- | -------------|
-|MixUp|76.79 | 50.76 |
-|MixUpAttack| 71.31 | 44.5 |
+|ERM| 81.69 | 59.14 |
+|MixUp| 75.57 | 49.41 |
+|MixUpAttack| 70.82 | 49.96 |
 |CutMix| 81.24 | 58.72 |
 
 4, train_MixMatchAttack.py is to train on CIFAR-10 or SVHN dataset with MixMatchAttack method, an extension of MixMatch "https://arxiv.org/abs/1905.02249". We developpe the attack version from an implemention of MixMatch in Pytorch, written by Yui : "https://github.com/YU1ut/MixMatch-pytorch". An exemple of uisng this script :
